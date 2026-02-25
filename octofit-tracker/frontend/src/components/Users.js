@@ -15,11 +15,12 @@ function Users() {
   const [saveSuccess, setSaveSuccess] = useState(false);
 
   const codespaceName = process.env.REACT_APP_CODESPACE_NAME;
-  const apiBase = codespaceName
-    ? `https://${codespaceName}-8000.app.github.dev`
-    : 'http://localhost:8000';
-  const apiUrl = `${apiBase}/api/users/`;
-  const teamsUrl = `${apiBase}/api/teams/`;
+  const apiUrl = codespaceName
+    ? `https://${codespaceName}-8000.app.github.dev/api/users/`
+    : 'http://localhost:8000/api/users/';
+  const teamsUrl = codespaceName
+    ? `https://${codespaceName}-8000.app.github.dev/api/teams/`
+    : 'http://localhost:8000/api/teams/';
 
   // Helper – which team (if any) does a user belong to?
   const getUserTeam = useCallback((userName) =>
