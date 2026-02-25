@@ -35,6 +35,9 @@ if codespace_name:
 else:
     base_url = "http://localhost:8000"
 
+# Expose base_url so views can reference the correct API root URL
+API_BASE_URL = base_url
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', api_root, name='api-root-index'),
