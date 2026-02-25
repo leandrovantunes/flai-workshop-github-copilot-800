@@ -1,0 +1,340 @@
+/* OctoFit Tracker — App styles */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+  background: linear-gradient(160deg, #e8edf5 0%, #dde6f5 50%, #e4e8f8 100%);
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e2a3a;
+}
+
+/* ── Navbar ── */
+.octofit-navbar {
+  background: linear-gradient(90deg, #0d0d1a 0%, #12203a 55%, #0f3460 100%) !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.octofit-nav-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 2px solid rgba(233, 69, 96, 0.6);
+  background: #fff;
+  padding: 2px;
+  box-shadow: 0 0 8px rgba(233, 69, 96, 0.4);
+}
+
+.octofit-navbar .navbar-brand {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: #e94560 !important;
+  text-shadow: 0 0 12px rgba(233, 69, 96, 0.4);
+}
+
+.octofit-navbar .navbar-brand span {
+  color: #ffffff;
+}
+
+.octofit-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 0.45rem 0.9rem !important;
+  border-radius: 7px;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  letter-spacing: 0.2px;
+}
+
+.octofit-navbar .nav-link:hover {
+  background-color: rgba(233, 69, 96, 0.18);
+  color: #ff6b81 !important;
+  box-shadow: 0 0 8px rgba(233, 69, 96, 0.25);
+}
+
+.octofit-navbar .nav-link.active {
+  background-color: rgba(233, 69, 96, 0.28);
+  color: #ff6b81 !important;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(233, 69, 96, 0.3);
+}
+
+/* ── Page wrapper ── */
+.octofit-page {
+  min-height: calc(100vh - 120px);
+  padding-bottom: 2rem;
+}
+
+/* ── Page heading card ── */
+.octofit-heading-card {
+  background: linear-gradient(135deg, #0d0d1a 0%, #0f3460 60%, #1a4a8a 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 1.6rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 20px rgba(15, 52, 96, 0.45);
+  border-left: 5px solid #e94560;
+}
+
+.octofit-heading-card h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.octofit-heading-card p {
+  margin: 0.4rem 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ── Data table ── */
+.octofit-table-wrapper {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(15, 52, 96, 0.12);
+  overflow: hidden;
+  border: 1px solid rgba(15, 52, 96, 0.08);
+}
+
+.octofit-table {
+  margin-bottom: 0;
+}
+
+.octofit-table thead th {
+  background: linear-gradient(90deg, #0f3460 0%, #1a4a8a 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: none;
+  padding: 1rem 1.2rem;
+}
+
+.octofit-table tbody tr {
+  transition: background 0.14s, box-shadow 0.14s;
+}
+
+.octofit-table tbody tr:nth-child(even) {
+  background-color: #f5f8ff;
+}
+
+.octofit-table tbody tr:hover {
+  background-color: #e8f0ff;
+  box-shadow: inset 4px 0 0 #e94560;
+}
+
+.octofit-table tbody td {
+  padding: 0.85rem 1.2rem;
+  vertical-align: middle;
+  border-color: #e9eef7;
+  font-size: 0.92rem;
+  color: #1e2a3a;
+}
+
+.octofit-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── Status / loading / error ── */
+.octofit-status {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6c757d;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(15, 52, 96, 0.1);
+}
+
+.octofit-status .spinner-border {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: #e94560;
+  border-width: 0.22em;
+}
+
+/* ── Home hero ── */
+.octofit-hero {
+  background: linear-gradient(135deg, #0d0d1a 0%, #0f3460 50%, #1a4a8a 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(15, 52, 96, 0.45);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.octofit-hero::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(233, 69, 96, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.octofit-hero .octofit-hero-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 3px solid rgba(233, 69, 96, 0.7);
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 0 20px rgba(233, 69, 96, 0.4);
+  margin-bottom: 1rem;
+}
+
+.octofit-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #e94560;
+  text-shadow: 0 0 20px rgba(233, 69, 96, 0.35);
+  letter-spacing: -0.5px;
+}
+
+.octofit-hero .lead {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.octofit-hero .btn-danger {
+  background: linear-gradient(135deg, #e94560, #c0392b);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 14px rgba(233, 69, 96, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.octofit-hero .btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(233, 69, 96, 0.55);
+}
+
+.octofit-hero .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #ffffff;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.octofit-hero .btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.octofit-stat-card {
+  border: 1px solid rgba(15, 52, 96, 0.1);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 3px 14px rgba(15, 52, 96, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.octofit-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(15, 52, 96, 0.18);
+  border-color: rgba(233, 69, 96, 0.35);
+}
+
+.octofit-stat-card .card-body {
+  padding: 1.6rem 1.5rem;
+}
+
+.octofit-stat-card .stat-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.octofit-stat-card .card-title {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  color: #0f3460;
+  margin-bottom: 0.4rem;
+}
+
+.octofit-stat-card .stat-value {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #5a6a7e;
+  line-height: 1.4;
+}
+
+/* ── Footer ── */
+.octofit-footer {
+  background: linear-gradient(90deg, #0d0d1a 0%, #0f3460 100%);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 1.1rem 1rem;
+  font-size: 0.82rem;
+  margin-top: auto;
+  border-top: 1px solid rgba(233, 69, 96, 0.25);
+  letter-spacing: 0.2px;
+}
+
+/* ── Leaderboard badges ── */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.88rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.rank-1 { background: linear-gradient(135deg, #ffd700, #f0a500); color: #5a3e00; }
+.rank-2 { background: linear-gradient(135deg, #d0d0d0, #a0a0a0); color: #333; }
+.rank-3 { background: linear-gradient(135deg, #cd7f32, #a0522d); color: #fff; }
+.rank-other { background: #e9ecef; color: #495057; }
+
+/* —— Global link colours —— */
+a {
+  color: #0f3460;
+  transition: color 0.15s;
+}
+a:hover {
+  color: #e94560;
+}
+
+/* —— Bootstrap alert override —— */
+.alert-danger {
+  background-color: #fff0f2;
+  border-color: #e94560;
+  color: #7a0020;
+}
+
+/* —— Badge colour helpers —— */
+.bg-primary.bg-opacity-10 { background-color: rgba(15, 52, 96, 0.1) !important; }
+.text-primary { color: #0f3460 !important; }
+
+/* —— Responsive tweaks —— */
+@media (max-width: 576px) {
+  .octofit-heading-card h2 { font-size: 1.4rem; }
+  .octofit-hero h1 { font-size: 1.9rem; }
+  .octofit-hero { padding: 2rem 1.2rem; }
+}
